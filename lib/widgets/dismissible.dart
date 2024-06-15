@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class DismissibleWindget extends StatefulWidget {
-  const DismissibleWindget({super.key});
+class DismissibleWidget extends StatefulWidget {
+  const DismissibleWidget({super.key});
 
   @override
-  State<DismissibleWindget> createState() => _DismissibleWindgetState();
+  State<DismissibleWidget> createState() => _DismissibleWidgetState();
 }
 
-class _DismissibleWindgetState extends State<DismissibleWindget> {
+class _DismissibleWidgetState extends State<DismissibleWidget> {
   List fruits = ['Orange', 'Aplle', 'Mango', 'Banana', 'Graps'];
 
   @override
