@@ -10,9 +10,13 @@ import 'package:flutter_learning/widgets/drawer.dart';
 import 'package:flutter_learning/widgets/drop_down.dart';
 import 'package:flutter_learning/widgets/forms.dart';
 import 'package:flutter_learning/widgets/image.dart';
+import 'package:flutter_learning/widgets/image_picker.dart';
 import 'package:flutter_learning/widgets/listview_gridview.dart';
+import 'package:flutter_learning/widgets/location.dart';
 import 'package:flutter_learning/widgets/rows_columns.dart';
 import 'package:flutter_learning/widgets/snackbar.dart';
+import 'package:flutter_learning/widgets/stack.dart';
+import 'package:flutter_learning/widgets/tabbar.dart';
 
 void main(){
   runApp(const MyApp());
@@ -42,7 +46,11 @@ class MyApp extends StatelessWidget{
       // home: const AnimatedTextWidget(),
       // home: const BottomNavWidgwt(),
       // home: const DropDownWidget(),
-      home: const FormWidget(),
+      // home: const FormWidget(),
+      // home: const StackWidget(),
+      // home: const TabBarWidget(),
+      home: const ImagePickerWidget(),
+      // home: const LocationWidget(),
     );
   }
 }
