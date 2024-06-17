@@ -13,7 +13,7 @@ class ImagePickerWidget extends StatefulWidget {
 class _ImagePickerWidgetState extends State<ImagePickerWidget> {
   final ImagePicker _picker = ImagePicker();
   XFile? file;
-  List<XFile>? files;
+  List<XFile>? files=[];
 
   @override
   Widget build(BuildContext context) {

@@ -34,14 +34,14 @@ class _BottomNavWidgwtState extends State<BottomNavWidgwt> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bottom Navigation'),
+        title: const Text('Bottom Navigation'),
         backgroundColor: Theme.of(context).primaryColor,
       ),
       // body: Center(child: widgets.elementAt(selectedindex)),
 
       body: PageView(
         controller: pageController,
-        children: [
+        children: const [
           AlertWidget(),
           Rows_Columns(),
           AnimatedTextWidget(),
@@ -49,7 +49,7 @@ class _BottomNavWidgwtState extends State<BottomNavWidgwt> {
         ],
       ),
 
-      bottomNavigationBar: BottomNavigationBar(items: <BottomNavigationBarItem>[
+      bottomNavigationBar: BottomNavigationBar(items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
         BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
         BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Add'),

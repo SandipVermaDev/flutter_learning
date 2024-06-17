@@ -20,10 +20,10 @@ class Buttons extends StatelessWidget {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const Container_Sized(),));
                   },
                 style: ButtonStyle(
-                  padding: const MaterialStatePropertyAll(EdgeInsets.all(14)),
-                  elevation: MaterialStateProperty.all(20),
-                  backgroundColor: MaterialStateProperty.all(Colors.yellow),
-                  overlayColor: const MaterialStatePropertyAll(Colors.orange),
+                  padding: const WidgetStatePropertyAll(EdgeInsets.all(14)),
+                  elevation: WidgetStateProperty.all(20),
+                  backgroundColor: WidgetStateProperty.all(Colors.yellow),
+                  overlayColor: const WidgetStatePropertyAll(Colors.orange),
                 ),
                 child: const Text(
                   'Text Button',
@@ -34,9 +34,9 @@ class Buttons extends StatelessWidget {
             ),
             ElevatedButton(
               style: ButtonStyle(
-                shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
+                shape: WidgetStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
                 // backgroundColor: MaterialStatePropertyAll(Colors.orange),
-                backgroundColor: MaterialStatePropertyAll(Theme.of(context).primaryColor)
+                backgroundColor: WidgetStatePropertyAll(Theme.of(context).primaryColor),
               ),
                 onPressed: () {
                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Rows_Columns(),));

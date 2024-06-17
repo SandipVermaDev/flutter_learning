@@ -8,7 +8,7 @@ class DropDownWidget extends StatefulWidget {
 }
 
 class _DropDownWidgetState extends State<DropDownWidget> {
-  String selectedvalue='orange';
+  String selectedvalue='Orange';
 
   @override
   Widget build(BuildContext context) {

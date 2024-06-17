@@ -49,8 +49,8 @@ class MyApp extends StatelessWidget{
       // home: const FormWidget(),
       // home: const StackWidget(),
       // home: const TabBarWidget(),
-      home: const ImagePickerWidget(),
-      // home: const LocationWidget(),
+      // home: const ImagePickerWidget(),
+      home: const LocationWidget(),
     );
   }
 }

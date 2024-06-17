@@ -65,7 +65,7 @@ class BottomSheetWidget extends StatelessWidget {
               );
             },
             style: const ButtonStyle(
-                backgroundColor: MaterialStatePropertyAll(Colors.orange)),
+                backgroundColor: WidgetStatePropertyAll(Colors.orange)),
             child: const Text(
               'Show Bottom Sheet',
               style: TextStyle(fontSize: 16, color: Colors.white),
