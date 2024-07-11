@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learning/shimmer_effect.dart';
 import 'package:flutter_learning/widgets/alert.dart';
 import 'package:flutter_learning/widgets/animated_text.dart';
 import 'package:flutter_learning/widgets/bottom_nav.dart';
@@ -49,7 +50,8 @@ class MyApp extends StatelessWidget{
       // home: const StackWidget(),
       // home: const TabBarWidget(),
       // home: const ImagePickerWidget(),
-      home: const LocationWidget(),
+      // home: const LocationWidget(),
+      home: const ShimmerEffect(),
     );
   }
 }
