@@ -4,14 +4,14 @@ import 'package:flutter_learning/widgets/animated_text.dart';
 import 'package:flutter_learning/widgets/image.dart';
 import 'package:flutter_learning/widgets/rows_columns.dart';
 
-class BottomNavWidgwt extends StatefulWidget {
-  const BottomNavWidgwt({super.key});
+class BottomNavWidget extends StatefulWidget {
+  const BottomNavWidget({super.key});
 
   @override
-  State<BottomNavWidgwt> createState() => _BottomNavWidgwtState();
+  State<BottomNavWidget> createState() => _BottomNavWidgetState();
 }
 
-class _BottomNavWidgwtState extends State<BottomNavWidgwt> {
+class _BottomNavWidgetState extends State<BottomNavWidget> {
   // int selectedindex=0;
 
   // List <Widget>widgets=[
@@ -21,9 +21,9 @@ class _BottomNavWidgwtState extends State<BottomNavWidgwt> {
   //   Text('Profile'),
   // ];
 
-  PageController pageController=PageController();
+  PageController pageController = PageController();
 
-  void onItemTap(int index){
+  void onItemTap(int index) {
     // setState(() {
     //   selectedindex=index;
     // });
@@ -49,13 +49,14 @@ class _BottomNavWidgwtState extends State<BottomNavWidgwt> {
         ],
       ),
 
-      bottomNavigationBar: BottomNavigationBar(items: const <BottomNavigationBarItem>[
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-        BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
-        BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Add'),
-        BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
-      ],
-      // currentIndex: selectedindex,
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+          BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Add'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+        ],
+        // currentIndex: selectedindex,
         selectedItemColor: Colors.purple,
         unselectedItemColor: Colors.deepPurple,
         onTap: onItemTap,

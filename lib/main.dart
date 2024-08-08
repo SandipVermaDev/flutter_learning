@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learning/shimmer_effect.dart';
+import 'package:flutter_learning/Home_widget.dart';
 import 'package:flutter_learning/widgets/alert.dart';
 import 'package:flutter_learning/widgets/animated_text.dart';
 import 'package:flutter_learning/widgets/bottom_nav.dart';
@@ -19,39 +19,24 @@ import 'package:flutter_learning/widgets/snackbar.dart';
 import 'package:flutter_learning/widgets/stack.dart';
 import 'package:flutter_learning/widgets/tabbar.dart';
 
-void main(){
+import 'widgets/shimmer_effect.dart';
+
+void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // brightness: Brightness.dark,
         primaryColor: Colors.orange,
       ),
-      // home: const Container_Sized(),
-      // home: const Rows_Columns(),
-      // home: const Buttons(),
-      // home: const ListView_GridView(),
-      // home: const SnackbarWidget(),
-      // home: const DismissibleWidget(),
-      // home: const DrawerWidget(),
-      // home: const ImageWidget(),
-      // home: const AlertWidget(),
-      // home: const BottomSheetWidget(),
-      // home: const AnimatedTextWidget(),
-      // home: const DropDownWidget(),
-      // home: const FormWidget(),
-      // home: const StackWidget(),
-      // home: const TabBarWidget(),
-      // home: const ImagePickerWidget(),
-      // home: const LocationWidget(),
-      home: const ShimmerEffect(),
+      home: const HomeWidget(),
     );
   }
 }
